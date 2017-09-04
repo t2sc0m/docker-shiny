@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y -q r-base  \
                     sudo \
                     libssl1.0.0 \
                     libcurl4-openssl-dev \
+                    libxml2-dev \
+                    libssl \
+                    libmariadb-client-lgpl-dev \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
