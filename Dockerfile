@@ -17,6 +17,9 @@ RUN apt-get update && apt-get install -y -q r-base  \
                     libxml2-dev \
                     libssl-dev \
                     libmariadb-client-lgpl-dev \
+                    language-pack-ja-base \
+                    language-pack-ja \
+                    ibus-mozc \
                     && apt-get clean \
                     && rm -rf /tmp/* /var/tmp/*  \
                     && rm -rf /var/lib/apt/lists/*
